@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pronombres personales — Ejercicio interactivo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 24px; max-width: 900px; margin: auto; }
+    h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+    select { margin: 0 6px; padding: 4px 6px; }
+    .correct { background: #e8f7e8; border: 1px solid #2e7d32; }
+    .incorrect { background: #fdeaea; border: 1px solid #c62828; }
+    #verificar { margin-top: 16px; padding: 10px 16px; cursor: pointer; }
+    #resultado { margin-top: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Tema: Pronombres personales (caso reto)</h1>
+  <p>Identifique qual é o pronome pessoal das seguintes frases:</p>
+
+  <div id="texto">
+    <p>1) Vamos à academia. 
+      <select id="resposta1">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+    <p>2) Hoje a professora está muito bonita. 
+      <select id="resposta2">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+    <p>3) Preciso estudar! Amanhã tenho prova! 
+      <select id="resposta3">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+    <p>4) Não fale alto! Estão estudando! 
+      <select id="resposta4">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+    <p>5) Qual é o seu nome? 
+      <select id="resposta5">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+    <p>6) José e Juliana são irmãos. 
+      <select id="resposta6">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+    <p>7) Rocco é um labrador chocolate. 
+      <select id="resposta7">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+    <p>8) Meu primo e eu vamos viajar para a Argentina nas férias. 
+      <select id="resposta8">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>
+    </p>
+
+    <p>9) <select id="resposta9">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select> me chamo João e sou brasileiro.
+    </p>
+    <p>10) <select id="resposta10">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select> sou advogado. <select id="resposta11">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select> é Mariana, minha esposa, e é médica.
+    </p>
+    <p>11) Quem é Antônio? Sou <select id="resposta12">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>.
+    </p>
+    <p>12) Tenho dois filhos. <select id="resposta13">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select> se chamam Leonardo e Lúcia.
+    </p>
+    <p>13) Quem é Guilherme? É <select id="resposta14">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select>.
+    </p>
+    <p>14) Meu nome é José, e o dele também. <select id="resposta15">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select> temos o mesmo nome!
+    </p>
+    <p>15) Vovô! <select id="resposta16">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select> cozinha tão bem!
+    </p>
+    <p>16) Dr. José, <select id="resposta17">
+        <option value="">—</option><option>eu</option><option>tu</option><option>você</option><option>o senhor</option><option>ele</option><option>ela</option><option>nós</option><option>vós</option><option>vocês</option><option>eles</option><option>elas</option>
+      </select> aceita um cafezinho?
+    </p>
+  </div>
+
+  <button id="verificar">Verificar</button>
+  <div id="resultado"></div>
+
+  <script>
+    const correctAnswers = [
+      "nós", "ela", "eu", "eles", "você", "eles", "ele", "nós",
+      "eu", "eu", "ela", "eu", "eles", "ele", "nós", "o senhor", "o senhor"
+    ];
+
+    function getSelectsInOrder() {
+      return Array.from(document.querySelectorAll('select[id^="resposta"]'))
+        .sort((a,b) => parseInt(a.id.replace('resposta','')) - parseInt(b.id.replace('resposta','')));
+    }
+
+    function verificar() {
+      const selects = getSelectsInOrder();
+      let aciertos = 0;
+      selects.forEach((sel, idx) => {
+        sel.classList.remove('correct','incorrect');
+        if ((sel.value || "").trim().toLowerCase() === correctAnswers[idx].toLowerCase()) {
+          sel.classList.add('correct');
+          aciertos++;
+        } else {
+          sel.classList.add('incorrect');
+        }
+      });
+      document.getElementById('resultado').textContent = `Aciertos: ${aciertos} de ${selects.length}`;
+    }
+
+    document.getElementById('verificar').addEventListener('click', verificar);
+  </script>
+</body>
+</html>
